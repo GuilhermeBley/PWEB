@@ -1,0 +1,102 @@
+/*
+    TAG'S
+*/
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color : azure;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+svg{
+    padding: 10px;
+}
+
+h1 {
+    padding: 25px;
+    text-align: center;
+    font-size: 30px;
+    color: cornsilk;
+}
+
+footer{
+    padding:5px 0;
+    box-shadow:0 3px 3px rgba(0, 0, 0, 0.377);
+    min-height:50px;
+    position:relative;
+	bottom:0;
+    background-color: rgb(71, 117, 241);
+    text-align: center;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+/*
+    CLASS
+*/
+
+.header{
+    padding:5px 0;
+    position:relative;
+    min-height:50px;
+    background-color: royalblue;
+    text-align: center;
+}
+
+.spanFooter{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.nameFooter{
+    text-align: center;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.content {
+    background-color: rgba(221, 221, 221, 0.911);
+    position:relative;
+    padding:5px;
+    padding-left: 5%;
+    box-shadow:0 3px 3px rgba(0,0,0,.16);
+    color: black;
+    min-height: 500px;
+}
+
+.titulo{
+    font: Helvetica;
+    position: relative;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    font-size: 30px;
+    padding-left: 10%;    
+}
+
+.texto{
+    font: arial;
+    position: relative;
+    font-size: 20px;
+    padding: 5px;
+    width: 95%;
+    height: 95%;
+    text-align: justify;
+    text-indent: 14px;
+}
+
+.textoNome{
+    font-size: 20px;
+}
+
+.btnMeContent{
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.171);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    cursor: pointer;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+}
