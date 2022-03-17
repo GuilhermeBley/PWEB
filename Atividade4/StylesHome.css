@@ -1,0 +1,144 @@
+/*
+    TAG'S
+*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    color : azure;
+}
+
+svg{
+    padding: 10px;
+}
+
+h1 {
+    padding-left: 10px;
+    text-align: start;
+    color: aliceblue;
+    font: Arial;
+}
+
+header{
+    background-color: rgba(39, 41, 46, 0.795);
+    text-align: center;
+    border: solid;
+}
+
+footer{
+    box-shadow:0 3px 3px rgba(0, 0, 0, 0.377);
+    background-color: rgb(71, 117, 241);
+    text-align: center;
+    font-size: 10px;
+    background-color: rgba(0, 0, 0, 0.836);
+    min-height:50px; 
+    clear: both;
+    position: relative;
+    bottom: 0;
+    margin-top: -200px;
+}
+
+article {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    border-color: #CCC #999 #999 #CCC;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+    
+    
+article h2 {
+    color: #000000d7;
+    border-bottom: 1px dashed #000000a1;
+    margin: 5px;
+}
+
+article p{
+    color: #000000c2;
+}
+
+article a{
+    color: rgba(39, 41, 46, 0.795);
+}
+
+article img {
+    border: 1px solid #0d0f05;
+    margin: 10px 10px 0 0;
+    padding: 2px;
+    width: 100%;
+    height: 100%;
+}
+
+section { 
+    float: left;
+    width: 60%;
+}
+
+aside {
+    background-color: #fffbe4bb;
+    border: 1px solid #3f3f3f4b;
+    padding: 10px;
+    height: 100%;
+    float: right;
+    width: 30%;
+}
+
+aside p{
+    color: #000000c2;
+}
+
+aside a{
+    color: crimson;
+}
+
+/*
+    CLASS
+*/
+
+.container{
+    box-shadow: 0px 0px 10px black;
+    background-color: white;
+    position: relative;
+}
+
+.mostrarMais{
+    border: 1px solid #0d0f05;
+    margin: 10px 0px 10px 0px;
+    width: 100%;
+    height: 100%;
+    transition-duration: 1s;
+    cursor: pointer;
+    color: #0d0f05;
+    background-color: white;
+    border-color: rgba(0, 0, 0, 0.596);
+    border-radius: 10px;
+}
+
+.spanFooter{
+    text-align: center;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.479);
+}
+
+.nameFooter{
+    text-align: center;
+    font-size: 10px;
+    color: rgba(0, 0, 0, 0.877);
+}
+
+.btnMeContent{
+    background-color: transparent;
+    border-color: rgba(0, 0, 0, 0.171);
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    background-color: rgba(240, 248, 255, 0.103);
+}
+
+.svgFooter{
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
