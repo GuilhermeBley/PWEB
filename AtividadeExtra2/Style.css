@@ -1,0 +1,28 @@
+body {
+	font: 150% Arial, Helvetica, sans-serif;
+}
+/* 150% do tamanho original "pai"  */
+
+
+h1 {
+	font: bold 100% Arial, Helvetica, sans-serif;
+}
+
+#pagina {
+	padding: 5px;
+    height: 50em;
+    background-color: burlywood;
+    border: solid 1px #ccc;
+    background-color: sk;
+}
+
+	
+#pagina2 {
+    padding: 5px;
+    width: 50%;
+    height: 70%;
+	margin: 20px auto;
+    background-color: burlywood;
+    border: solid 1px #ccc;
+}
+
