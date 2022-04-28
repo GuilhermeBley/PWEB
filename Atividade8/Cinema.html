@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8"/>
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1" name="viewport">
+    <title>Calculo Operações</title>
+    <script src="Script.js"></script>
+    <link rel="stylesheet" href="Style.css">
+</head>
+<body>
+    <header>
+        <h1>
+            Cálculo opiniões filme.
+        </h1>
+    </header>
+    <div id="main">
+        <label id="lQtd" for="lQtd">Quantidade de Pessoas: </label>
+        <input type="text" id="iQtd" name="lQtd" onkeypress="return onlynumber();"><br><br>
+        <button id="calcFilme" onclick="CarregarInputs(document.getElementById('iQtd').value)">
+            Clique aqui para calcular
+        </button>
+
+    </div>
+</body>
+
+</html>
