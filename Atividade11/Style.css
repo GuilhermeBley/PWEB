@@ -1,0 +1,10 @@
+h1{
+    padding-bottom: 50px;
+}
+
+div.tres {
+    width:200px;
+    height:200px;
+    border: 25px solid; /* As 4 bordas sólidas com 25px de espessura */
+    border-color: red green black black; /* cores: topo, direita, inferior, esquerda */
+}
