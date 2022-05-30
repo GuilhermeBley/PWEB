@@ -1,37 +1,56 @@
 function validateForm(){
 
-    let valid;
+    let valid = true;
 
-    let nome = document.forms["principal"]["nome"].value;
+    let nome = document.forms["principal"]["nome"];
+    let email = document.forms["principal"]["email"];
+    let comentario = document.forms["principal"]["comentario"];
 
-    if (nome.length < 10){
-        alert("Nome inválido.");
-        return false;
+    if (nome.value.length < 10){
+        nome.classList.add('is-invalid');
+        valid = false;
+    }else{
+        nome.classList.remove('is-invalid');
+        nome.classList.add('was-validated');
+    }
+    
+    if (!validacaoEmail(email.value)){
+        email.classList.add('is-invalid');
+        valid = false;
+    }else{
+        email.classList.remove('is-invalid');
+        email.classList.add('was-validated');
     }
 
-    let email = document.forms["principal"]["email"].value;
-
-    if (!validacaoEmail(email)){
-        alert("Email inválido.");
-        return false;
-    }
-
-    let comentario = document.forms["principal"]["comentario"].value;
-
-    if (comentario.length < 20){
-        alert("Comentário inválido.");
-        return false;
+    if (comentario.value.length < 20){
+        comentario.classList.add('is-invalid');
+        valid = false;
+    }else{
+        comentario.classList.remove('is-invalid');
+        comentario.classList.add('was-validated');
     }
 
 
+    if (valid === false)
+        return false;
 
     // Verificar check box
+    alert("Envio completo!")
 
+    return true;
 }
 
 function validacaoEmail(field) {
-    usuario = field.value.substring(0, field.value.indexOf("@"));
-    dominio = field.value.substring(field.value.indexOf("@")+ 1, field.value.length);
+    
+    let usuario, dominio;
+    
+    try{
+        usuario = field.substring(0, field.indexOf("@"));
+        dominio = field.substring(field.indexOf("@")+ 1, field.length);
+    }catch{
+        return false;
+    }
+    
     
     if ((usuario.length >=1) &&
         (dominio.length >=3) &&

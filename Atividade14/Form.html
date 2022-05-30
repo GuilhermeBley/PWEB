@@ -18,7 +18,7 @@
         <div id="main">
                
             <div class="container">
-                <form name="principal">
+                <form name="principal" class="info" onsubmit="return validateForm()">
                     <div class="form-group my-2">
                       <label for="exampleNome">Nome</label>
                       <input name="nome" type="text" class="form-control" id="exampleNome" aria-describedby="NomeHelp" placeholder="Entrar com nome" required>
@@ -61,7 +61,7 @@
                       <div class="invalid-feedback">
                           Check inválido.
                        </div>
-                    <button type="submit" class="btn btn-primary" onsubmit="return validateForm()">Submit</button>
+                    <button type="submit" class="btn btn-primary" onsubmit="return validateForm();">Enviar</button>
                   </form>
             </div>
         </div>
